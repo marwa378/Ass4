@@ -1,0 +1,172 @@
+d*{
+  margin: 0px;
+  padding:0px;
+   box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    margin-top: -10px;
+}
+li{
+    float: left;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    opacity: 0.8;
+    background-color: black;
+    color: blanchedalmond;
+
+}
+li a{
+    text-decoration: none;
+    display: block;
+    color: blanchedalmond;
+}
+li a:hover{
+    background-color: rgb(192, 89, 63);
+}
+ul li ul li{
+    display: none;
+    margin-top: 1px;
+}
+ul li:hover ul li{
+    display: block;
+}
+.nav::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+.images{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+ .images .gallery
+ {
+   margin-left: 20px;
+   margin-top: 15px;
+   width: 30%;
+}
+  .images .gallery img{
+    transform: scale(1.01, 1.01);
+    width: 80%;
+    height: 700px;
+    }
+span{
+  border-bottom: 5px solid tomato;
+
+}
+h1{ margin-left: 30px;
+  font-size: 40px;}
+
+.new{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap; 
+    margin: 15px;
+  }
+  .new img {
+     margin-left: 20px;
+    width: 250px;
+    height: 400px;
+  }
+.cont {
+    position: relative;
+ }
+ p{
+   font-size: 30px;
+   color: tomato;
+   font-style: bold;
+ }
+ .des
+     {
+       position: absolute;
+       bottom: 0;
+        height: 0%;
+        background: rgba(255, 254, 254, 0.726);
+       display: none;
+       font-size: 15px;
+       text-align: center;
+       }
+ .cont:hover .des
+ {
+   width: 250px;
+   height: 15%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    margin-left: 20px;
+    margin-bottom: 15px;
+ }
+ @media screen and (max-width: 600px) {
+   ul li:hover ul li{
+       display: none;
+   }
+   .images
+   {
+     flex-direction: column;
+     align-items:center;
+
+   }
+   .images .gallery
+   {
+     width: 70%;
+  }
+    .images .gallery img{
+
+      width: 80%;
+      height: 400px;
+      }
+      .new
+      {
+        flex-direction: column;
+         align-items:center;
+      }
+      .new .cont
+      {
+        width: 70%;
+      }
+      .new .cont img
+      {
+          width: 100%;
+          margin-top: 15px;
+      }
+      li{
+        width: 100%;
+      }
+ }
+
+
+
+
+@media only screen and (max-width: 800px) {
+ .image .gallery
+ {
+   width: 40%;
+ }
+
+  .video{
+    margin-left: 40%;
+    height: 400px;
+  }
+
+
+
+ul li:hover ul li{
+    display: none;
+}
+.h::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+
+}

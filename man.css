@@ -1,0 +1,218 @@
+/* body{
+    position: relative;
+}
+.nav{
+    position: absolute;
+    top: 0;
+} */
+*{
+  margin: 0px;
+  padding:0px;
+   box-sizing: border-box;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    margin-top: -10px;
+}
+li{
+    float: left;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    opacity: 0.8;
+    background-color: black;
+    color: blanchedalmond;
+
+}
+li a{
+    text-decoration: none;
+    display: block;
+    color: blanchedalmond;
+}
+li a:hover{
+    background-color: rgb(192, 89, 63);
+}
+ul li ul li{
+    display: none;
+    margin-top: 1px;
+}
+ul li:hover ul li{
+    display: block;
+}
+ @media screen and (max-width: 600px) {
+     ul {float:none;
+                width:100% ;
+    }
+   0
+}
+.tabsize td,table{
+
+    text-align: center;
+
+}
+.tabsize td{
+    width:27%;
+}
+
+.tabsize table{
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: 35%;
+   margin-top: 135px;
+
+}
+.tabsize th{
+    height: 15px;
+    border-collapse: collapse;
+    border-bottom-color: 3px solid rgb(161, 154, 154);
+}
+.tabsize th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    width: 10px;
+  }
+.tabsize td:hover{
+ background-color: tomato;;
+}
+.size p{
+    float: left;
+    width: 360px;
+    height: 500px;
+    margin-left: 30px;
+    line-height: 40px;
+    font-size: 25px;
+}
+h2{
+    font-size: 35px;
+    width: 100%;
+}
+
+ .size span{
+    color: tomato;
+    font-size: 30px;
+ }
+
+ .price{
+     color: tomato;
+     font-size: 30px;
+     font-weight: bold;
+ }
+ .sale{
+     text-decoration: line-through;
+     color: rgba(97, 163, 165, 0.541);
+    margin-right: 7px;
+    font-size: 20px;
+ }
+ .all td{
+    text-align: center;
+    width:20%;
+    height: 450px;
+ }
+ .all th{
+    text-shadow: -2px -2px 3px  tomato;
+     height: 100px;
+     font-size: 40px;
+     font-family: "Lucida Console", "Courier New", monospace;
+ }
+  img:hover{
+      /* width: 275px;
+      height: 420px; */
+      transform: translateY(-5px);
+  }
+  /* .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 30px;
+ }
+   */
+ @media screen and (max-width:800px) {
+   ul li:hover ul li{
+       display: none;
+   }
+.all td
+{
+  display: block;
+position: relative;
+width: 100%;
+}
+td p{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 254, 254, 0.726);
+  height: 30%;
+}
+ td .price
+{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: (255, 254, 254);
+  height: 30%;
+}
+ td .sale
+{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: (255, 254, 254);
+  height: 30%;
+}
+td:hover p
+{
+  display: block;
+}
+td:hover .price
+{
+  display: block;
+}
+td:hover .sale
+{
+  display: block;
+
+}
+
+.price
+{
+  padding-top: 50px;
+}
+.sale
+{
+  padding-top: 80px;
+}
+li
+{
+  width: 100%;
+}
+}
+@media screen and (max-width:600px) {
+  .tabsize
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tabsize table
+  {
+    width: 100%;
+  }
+  ul li:hover ul li{
+      display: none;
+  }
+}

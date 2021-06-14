@@ -1,0 +1,183 @@
+*{
+  margin: 0px;
+  padding:0px;
+   box-sizing: border-box;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    margin-top: -10px;
+}
+li{
+    float: left;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    opacity: 0.8;
+    background-color: black;
+    color: blanchedalmond;
+
+}
+li a{
+    text-decoration: none;
+    display: block;
+    color: blanchedalmond;
+}
+li a:hover{
+    background-color: rgb(192, 89, 63);
+}
+ul li ul li{
+    display: none;
+    margin-top: 1px;
+}
+ul li:hover ul li{
+    display: block;
+}
+/* @media screen and (max-width: 600px) {
+  ul.nav li { float: none;
+              margin-left:50px;
+  }
+}  */
+ span {
+    color: tomato;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  div.gallery {
+    border: 1px solid #ccc;
+    height: 710px;
+    margin: 50px 30px;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: 550px;
+    transition: transform 2s;
+  }
+
+  div.gallery img:hover{
+    transform: scale(1.2, 1.09);
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+
+  h1{
+    text-shadow: -2px -2px 3px  tomato;
+    font-size: 40px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+
+  }
+  .tabsize td,table{
+
+    text-align: center;
+
+}
+.tabsize td{
+    width:27%;
+}
+
+.tabsize table{
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: 35%;
+   margin-top: 135px;
+
+}
+.tabsize th{
+    height: 15px;
+    border-collapse: collapse;
+    border-bottom-color: 3px solid rgb(161, 154, 154);
+}
+.tabsize th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    width: 10px;
+  }
+.tabsize td:hover{
+ background-color: tomato;;
+}
+.size p{
+    float: left;
+    width: 360px;
+    height: 500px;
+    margin-left: 30px;
+    line-height: 40px;
+    font-size: 25px;
+}
+h2{
+    font-size: 35px;
+    width: 100%;
+}
+.size after::{
+    clear: both;
+    content: "";
+    display: table;
+ }
+ .size span{
+    color: tomato;
+    font-size: 30px;
+ }
+  @media only screen and (max-width: 852px) {
+    .responsive {
+      width: 33.3333%;
+      margin: 6px 0;
+    }
+    li
+    {
+      width: 100%;
+    }
+    ul li:hover ul li{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+
+  }
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+    .tabsize
+    {
+      display: flex;
+      flex-direction: column;
+    }
+    ul li:hover ul li{
+        display: none;
+    }
+    /* .tabsize{
+      float: left;
+     margin-left: -20px;
+       margin-left: -50px;
+    } */
+  }

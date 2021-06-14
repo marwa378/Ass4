@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>REGISTER</title>
+   
+</head>
+<body> 
+  <script>
+    function validation(){
+// store the value that user enter in variables
+var user = document.getElementById('user').value;
+var user2 =  document.getElementById('user2').value;
+var pass = document.getElementById('pass').value;
+
+var email = document.getElementById('email').value;
+var mobile = document.getElementById('mobile').value;
+
+var myform = document.getElementById('myform');
+
+if(user.length<3){
+    alert("first Name must be more than 2 letters");
+    return false;
+}
+if(user2.length<3){
+  alert("last Name must be more than 2 letters");
+  return false;
+}
+if(mobile.length!=11){
+    alert("*Please Enter avalid number");
+    return false;
+}
+
+
+if(pass.search(/[ ]/)!=-1){
+   alert("must not include a space");
+return false;
+}
+// limit the lenght of the  pass
+if(pass.length != 8 ){
+  alert("please write a passward of 8 no long no less");
+    return false;
+}
+  // must enclud numbers
+if(pass.search(/[0-9]/)==-1){
+    
+    alert("must incluce at least a number");
+    return false;
+}
+//not to accept without upper characters
+if(pass.search(/[A-Z]/)==-1){
+alert("must include at leasrt 1 upper character");
+    return false;
+}
+// not to accept without lower characters
+if(pass.search(/[a-z]/)==-1){
+    alert("must include at least 1 lowwer character");
+return false;
+}
+// not accept without special characters
+if(pass.search(/[!\@\#\$\%\^\&\*\(\)\_\-\=\+\<\>\,\?]/)==-1){
+   
+       alert("must include 1 special character");
+    return false;
+   }
+
+
+
+  if(email.indexOf("@") == -1 || email.length < 6){
+  alert("Please Enter valid Email");
+   return false;
+}
+      }
+  </script>
+ <div class="nav">
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="woman3.html">WOMAN'S</a> 
+          <ul>
+            <li><a href="./woman3.html#3">DRESSES</a></li>
+            <li><a href="./woman3.html#4">SKIRTS</a></li>
+            <li><a href="./woman3.html#5">JEANS</a></li>
+          </ul>
+      </li> 
+      <li><a href="man.html">MAN'S</a>
+        <ul>
+            <li><a href="./man.html#1">SHIRTS</a></li>
+            <li><a href="./man.html#2">T-SHIRTS</a></li>
+            <li><a href="./man.html#3">JACKETS</a></li>
+      </ul>
+    </li>
+      <li><a href="bags.html">BAGS</a></li>
+      <li><a href="form.html">SIGN IN</a></li>
+  </ul>
+</div>
+     <div class="all">
+    <form id="myform"  method="get" action="index.html" onsubmit="return validation();" autocompelete="on">
+     <div class="row">
+       <div class="left" ><label>First Name</label></div>
+       <div class="right"><input id="user" type="text" name="firstname"  required></div>
+    </div>
+    <div class="row">
+       <div class="left"> <label>Last Name</label></div>
+        <div class="right"><input id="user2" type="text" name="lastname" required></div>
+    </div>
+    <div class="row">
+        <div class="left"><label>E-mail</label></div>
+        <div class="right"><input id="email" type="email" name="email"  required></div>
+    </div>
+    <div class="row">
+      <div class="left"> <label>Password</label></div>
+       <div class="right"><input id="pass" type="Password" name="pass" required></div>
+   </div>
+    <div class="row">
+        <div class="left"><label>Phone Num</label></div>
+       <div  class="right"> <input id="mobile" type="tele" name="num"  required placeholder="Only 11 Num "></div>
+    </div>
+    <div class="row">
+        <div class="left"><label>Address</label></div>
+        <div  class="right"><input type="text" name="address" ></div>
+    </div>
+    <div class="row">
+      <div class="left"><label for="gender">Gender</label></div>
+      <div class="right">
+      <select name="male" id="gender">
+        <option value="1" >Male</option>
+        <option value="2" >Female</option>
+      </select>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+   </div>
+</body>
+</html> 
